@@ -32,10 +32,26 @@ cosi.config.js
 * [相关配置详见阿里云OSS文档](https://help.aliyun.com/document_detail/64097.html)
 
 ### OBSBasic
+* [华为云OBS文档](https://support.huaweicloud.com/api-obs_nodejs_sdk_api_zh/obs_39_0101.html)
 
 #### `bucket`
 * 操作桶名称
    * 字符串 
 * 上传桶名称
 * 该值是COSI配置OBS客户端初始化不存在该API
-* [华为云OBS客户端初始化文档](https://support.huaweicloud.com/api-obs_nodejs_sdk_api_zh/obs_39_0101.html)
+
+### COSBasic
+* [腾讯云COS文档](https://cloud.tencent.com/document/product/436/8629)
+
+#### `region`
+* 地域
+   * 字符串 
+* 存储桶所在地域
+* 该值是COSI配置COS客户端初始化不存在该API
+
+#### `bucket`
+* 操作桶名称
+   * 字符串 
+* 上传桶名称
+* 该值是COSI配置COS客户端初始化不存在该API
+

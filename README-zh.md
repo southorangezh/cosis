@@ -4,7 +4,7 @@
 云对象存储集成
 
 
-* 集成阿里云和华为云对象存储上传静态文件
+* 集成阿里云\华为云\腾讯云对象存储上传静态文件
 
 # 安装
 
@@ -32,6 +32,7 @@ npm run cosi:test
 
 * [阿里云OSS](https://github.com/ali-sdk/ali-oss)
 
+* [腾讯云COS](https://github.com/tencentyun/cos-nodejs-sdk-v5)
 
 * [colors](https://github.com/Marak/colors.js)
 

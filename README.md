@@ -4,7 +4,7 @@
 Cloud object storage integrate
 
 
-* Integrate Alibaba Cloud and Huawei Cloud Object Storage to upload static files
+* Integrate Alibaba Cloud\Huawei Cloud\Tencent Cloud Object Storage to upload static files
 
 # Install
 
@@ -14,6 +14,10 @@ npm install cosi --save
 
 ```
 # Command
+
+```
+npm run cosi:test
+```
 
 # Use environment
 
@@ -26,6 +30,7 @@ Node.js
 
 * [Aliyun OSS](https://github.com/ali-sdk/ali-oss)
 
+* [Tencent Cloud COS](https://github.com/tencentyun/cos-nodejs-sdk-v5)
 
 * [Colors](https://github.com/Marak/colors.js)
 

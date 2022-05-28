@@ -16,7 +16,12 @@ export default {
         server: "",
         bucket: "",
     },
+    COSBasic: {
+        region: "",
+        SecretId: "",
+        SecretKey: "",
+        bucket: "",
+    },
     mapFilePath: "",
     whiteListFileName: [],
-
 };

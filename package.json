@@ -11,8 +11,9 @@
   "license": "MIT",
   "dependencies": {
     "ali-oss": "^6.17.1",
-    "esdk-obs-nodejs": "^3.21.6",
     "colors": "^1.4.0",
+    "cos-nodejs-sdk-v5": "^2.11.9",
+    "esdk-obs-nodejs": "^3.21.6",
     "nodejs-fs-utils": "^1.2.6",
     "qiao-console": "^0.1.0"
   }
