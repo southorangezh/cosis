@@ -1,0 +1,19 @@
+{
+  "name": "object_storage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "cosi:test": "node ./cosi-test"
+  },
+  "author": "",
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "ali-oss": "^6.17.1",
+    "esdk-obs-nodejs": "^3.21.6",
+    "colors": "^1.4.0",
+    "nodejs-fs-utils": "^1.2.6",
+    "qiao-console": "^0.1.0"
+  }
+}
