@@ -1,13 +1,14 @@
 {
   "name": "object_storage",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.1",
   "description": "",
   "main": "main.js",
   "scripts": {
-    "cosi:test": "node ./cosi-test"
+    "cosi:test": "node ./cosi-test",
+    "cosi:build": "rollup --config"
   },
   "author": "",
-  "type": "module",
+  "type": "commonjs",
   "license": "MIT",
   "dependencies": {
     "ali-oss": "^6.17.1",
@@ -15,6 +16,12 @@
     "cos-nodejs-sdk-v5": "^2.11.9",
     "esdk-obs-nodejs": "^3.21.6",
     "nodejs-fs-utils": "^1.2.6",
-    "qiao-console": "^0.1.0"
+    "qiao-console": "^0.1.0",
+    "rollup-plugin-json": "^4.0.0"
+  },
+  "devDependencies": {
+    "rollup": "^2.75.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
   }
 }
