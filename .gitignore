@@ -106,3 +106,5 @@ typings/
 #secret base
 SecretBase
 package-lock.json
+
+cosi.config.json

@@ -1,3 +1,3 @@
-const {version,cosiRun} = require("./cosi.js");
+const {version,cosi} = require("./cosi.js");
 console.log(version);
-cosiRun();
+cosi();

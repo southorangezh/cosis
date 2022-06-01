@@ -2,9 +2,9 @@
   "name": "object_storage",
   "version": "1.0.0-alpha.1",
   "description": "",
-  "main": "main.js",
+  "module": "./src/cosi.js",
   "scripts": {
-    "cosi:test": "node ./cosi-test",
+    "cosi:test": "node --trace-warnings ./src/index.js ",
     "cosi:build": "rollup --config"
   },
   "author": "",
@@ -20,6 +20,13 @@
     "rollup-plugin-json": "^4.0.0"
   },
   "devDependencies": {
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-buble": "^0.21.3",
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-inject": "^4.0.4",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "jest": "^28.1.0",
     "rollup": "^2.75.1",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0"
