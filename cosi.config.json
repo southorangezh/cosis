@@ -21,7 +21,7 @@
         "SecretId": "",
         "SecretKey": "",
         "bucket": ""
-    },
-    "mapFilePath": "",
-    "whiteListFileName": []
+    }
 }
+
+

@@ -108,3 +108,5 @@ SecretBase
 package-lock.json
 
 cosi.config.json
+
+cosi.config.back.json
