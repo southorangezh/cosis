@@ -1,8 +1,9 @@
 {
-  "name": "object_storage",
-  "version": "1.0.0-bate.1",
+  "name": "cosis",
+  "version": "1.0.0-bate.3",
   "description": "",
-  "module": "./src/cosi.js",
+  "module": "./lib/bundle.esm.js",
+  "main": "./lib/bundle.cjs.js",
   "scripts": {
     "cosi:test": "node --trace-warnings ./src/index.js ",
     "cosi:build": "rollup --config"

@@ -39,7 +39,7 @@ module.exports = {
           );
         }
       }
-      entTime = new Date().getTime();
+      let entTime = new Date().getTime();
       let time = (entTime - startTime) / 1000;
       console.log(
         colors.bgBlue.bold(" Upload Statistics "),
