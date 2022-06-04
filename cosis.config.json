@@ -14,7 +14,8 @@
         "access_key_id": "",
         "secret_access_key": "",
         "server": "",
-        "bucket": ""
+        "bucket": "",
+        "region": ""
     },
     "COSBasic": {
         "region": "",

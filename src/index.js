@@ -1,3 +1,4 @@
-const {version,cosi} = require("./cosi.js");
-console.log(version);
-cosi();
+const {version,sourceUrls} = require("./cosi.js");
+sourceUrls().then((res)=>{
+    console.log(res)
+})

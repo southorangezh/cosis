@@ -107,6 +107,8 @@ typings/
 SecretBase
 package-lock.json
 
-cosi.config.json
 
-cosi.config.back.json
+cosis.config.back.json
+
+.DS_store
+.vscode/

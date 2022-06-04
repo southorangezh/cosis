@@ -1,19 +1,20 @@
-# COSI 配置文件说明
+# COSIS 配置文件说明
 ---
 
 ## 目录
 ```
-cosi.config.js
+cosis.config.js
 ```
 ## 配置项
 
 ### basicParameters
 
-#### `osdTypes`
+#### `runs`
 * 数组字符类型:
    * OSS 
    * OBS
-* 使用的对象存储类型 OSS Aliyun | OBS Huaweicloud 同时上传开启的上传的服务
+   * COS
+* 使用的对象存储类型 OSS Aliyun | OBS Huaweicloud 同时上传开启的上传的服务腾讯云COS
 
 
 #### `staticResources`
@@ -38,8 +39,12 @@ cosi.config.js
 * 操作桶名称
    * 字符串 
 * 上传桶名称
-* 该值是COSI配置OBS客户端初始化不存在该API
-
+* 该值是COSIS配置OBS客户端初始化不存在该API
+#### `region`
+* 地域
+   * 字符串 
+* 存储桶所在地域
+* 该值是COSIS配置OBS客户端初始化不存在该API
 ### COSBasic
 * [腾讯云COS文档](https://cloud.tencent.com/document/product/436/8629)
 
@@ -47,11 +52,11 @@ cosi.config.js
 * 地域
    * 字符串 
 * 存储桶所在地域
-* 该值是COSI配置COS客户端初始化不存在该API
+* 该值是COSIS配置COS客户端初始化不存在该API
 
 #### `bucket`
 * 操作桶名称
    * 字符串 
 * 上传桶名称
-* 该值是COSI配置COS客户端初始化不存在该API
+* 该值是COSIS配置COS客户端初始化不存在该API
 

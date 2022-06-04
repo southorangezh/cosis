@@ -1,20 +1,21 @@
-# COSI configuration file description
+# COSIS configuration file description
 ---
 
 ## Table of contents
 ````
-cosi.config.js
+cosis.config.js
 ````
 ## Configuration items
 
 ### basicParameters
 
-#### `osdTypes`
+#### `runs`
 * Array character type:
     * OSS
     * OBS
+    * COS
 * The object storage type used is OSS Aliyun | OBS Huaweicloud simultaneous upload and enabled upload service
-
+Tencent Cloud COS
 
 #### `staticResources`
 * Character type:
@@ -38,8 +39,12 @@ cosi.config.js
 * Operation bucket name
     * string
 * Upload bucket name
-* The value is COSI configuration OBS client initialization does not exist this API
-
+* The value is COSIS configuration OBS client initialization does not exist this API
+#### `region`
+* Territory
+    * string
+* The region where the bucket is located
+* The value is COSIS configuration OBS client initialization does not exist this API
 
 ### COSBasic
 * [Tencent Cloud COS Documentation](https://cloud.tencent.com/document/product/436/8629)
@@ -48,10 +53,10 @@ cosi.config.js
 * Territory
     * string
 * The region where the bucket is located
-* This value is COSI configuration COS client initialization does not exist this API
+* This value is COSIS configuration COS client initialization does not exist this API
 
 #### `bucket`
 * Operation bucket name
     * string
 * Upload bucket name
-* This value is COSI configuration COS client initialization does not exist this API
+* This value is COSIS configuration COS client initialization does not exist this API
