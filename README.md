@@ -29,14 +29,14 @@ startOperations()
 
 ```
 
-## Test case
+## Example
 ```js
 let hex = hexGenerator(4)
 startOperations(hex);
 let srcs = sourceUrls()
 ```
 
-## Test case Web Pack
+## Example Web Pack
 ``` js
 const fs = require('fs');
 
