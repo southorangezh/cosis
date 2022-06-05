@@ -1,6 +1,6 @@
 {
   "name": "cosis",
-  "version": "1.0.0-bate.10",
+  "version": "1.0.0-bate.11",
   "description": "",
   "module": "./lib/bundle.esm.js",
   "main": "./lib/bundle.cjs.js",
