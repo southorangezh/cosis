@@ -7,18 +7,18 @@ const colors = require("colors");
 const q = require("qiao-console");
 const crypto = require("crypto");
 const { readConfigJSON } = require("./read.config.js");
-const runLog = (type) => {
+const runLog = (type,config) => {
   console.log(colors.yellow.bold(
-    type +
-    " " +
-    'Running...'
+    type + 
+    " " + config.basicParameters.hex+
+    ' Task Running...'
   ))
 }
 
 //run upload method
-const startOperations = async (hex) => {
+const startOperations =  (hex) => {
   q.clear();
-  let config = await readConfigJSON();
+  let config =  readConfigJSON();
   try {
     if (config.basicParameters.runs) {
       const files = statistics(
@@ -32,15 +32,15 @@ const startOperations = async (hex) => {
         for (let index = 0; index < config.basicParameters.runs.length; index++) {
           let val = config.basicParameters.runs[index]
           if (val === "OBS" && config.OBSBasic) {
-            runLog(val);
+            runLog(val,config);
             OBS(config, files);
           }
           if (val === "OSS" && config.OSSBasic) {
-            runLog(val);
+            runLog(val,config);
             OSS(config, files);
           }
           if (val === "COS" && config.COSBasic) {
-            runLog(val);
+            runLog(val,config);
             COS(config, files);
           }
 
@@ -53,9 +53,9 @@ const startOperations = async (hex) => {
 };
 
 //Get the source storage file address
-const sourceUrls = async(hex) => {
+const sourceUrls = (hex) => {
   hex = hex ? hex : "";
-  let config = await readConfigJSON();
+  let config =  readConfigJSON();
   return {
     OSS: config.basicParameters.runs.indexOf('OSS') != -1 ? ("https://" + config.OSSBasic.bucket + "." + config.OSSBasic.region + "." + "aliyuncs.com/" + hex ) : null,
     OBS: config.basicParameters.runs.indexOf('OBS') != -1 ? ("https://" + config.OBSBasic.bucket + "." + config.OBSBasic.region + ".myhuaweicloud.com/" + hex ) : null,
@@ -64,7 +64,7 @@ const sourceUrls = async(hex) => {
 }
 //hash maker
 const hexGenerator = (number) => {
-  return crypto.randomBytes(number).toString("hex");
+  return crypto.randomBytes(number?number:4).toString("hex");
 }
 module.exports = {
   version,

@@ -16,7 +16,7 @@ const obs = (config, files) => {
           obs.putObject(
             {
               Bucket: config.OBSBasic.bucket,
-              Key: cloudPath,
+              Key: cloudPath.split(path.sep).join('/'),
               SourceFile: path.normalize(localPath),
             },
             (err, result) => {
@@ -49,7 +49,7 @@ const obs = (config, files) => {
       try {
 
           put(
-          hex + path.substr(dir.length, path.length - 1),
+            hex + path.substr(dir.length, path.length - 1),
           path,
           stats
         ).then(({ result, localPath, stats }) => {

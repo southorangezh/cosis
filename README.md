@@ -1,4 +1,4 @@
-# COSIS
+# COSIS [![release candidate](https://img.shields.io/npm/v/cosis.svg)](https://www.npmjs.com/package/cosis)
 ---
 
 Cloud object storage integrate

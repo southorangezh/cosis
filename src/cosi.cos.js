@@ -1,6 +1,7 @@
 const COS = require("cos-nodejs-sdk-v5");
 const fsUtils = require("nodejs-fs-utils");
 const fs = require('fs');
+const Path = require("path");
 
 const {
     consoleUpFilesLog,
@@ -19,7 +20,7 @@ const cos = (config, files) => {
                     cos.putObject({
                         Bucket: config.COSBasic.bucket,
                         Region: config.COSBasic.region,
-                        Key: cloudPath,
+                        Key: cloudPath.split(Path.sep).join('/'),
                         StorageClass: 'STANDARD',
                         Body: fs.createReadStream(localPath),
                         ContentLength: fs.statSync(localPath).size,
@@ -53,7 +54,8 @@ const cos = (config, files) => {
     fsUtils.walk(dir, function (err, path, stats, next, cache) {
         if (!stats.isDirectory()) {
             try {
-
+                
+               
                 put(
                     hex + path.substr(dir.length, path.length - 1),
                     path,

@@ -11,7 +11,7 @@ const oss = (config, files) => {
   async function put(cloudPath, localPath, stats) {
     try {
       return {
-        result: (await client.put(cloudPath, path.normalize(localPath))) || [],
+        result: (await client.put(cloudPath.split(path.sep).join('/'), path.normalize(localPath))) || [],
         localPath,
         stats,
       };
@@ -35,7 +35,7 @@ const oss = (config, files) => {
     if (!stats.isDirectory()) {
       try {
         put(
-          hex + path.substr(dir.length, path.length - 1),
+         "/"+ hex + path.substr(dir.length, path.length - 1),
           path,
           stats
         ).then((res) => {

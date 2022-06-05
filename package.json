@@ -1,12 +1,20 @@
 {
   "name": "cosis",
-  "version": "1.0.0-bate.4",
+  "version": "1.0.0-bate.10",
   "description": "",
   "module": "./lib/bundle.esm.js",
   "main": "./lib/bundle.cjs.js",
   "scripts": {
-    "cosi:test": "node --trace-warnings ./src/index.js ",
-    "cosi:build": "rollup --config"
+    "cosis:test": "node --trace-warnings ./src/index.js ",
+    "cosis:build": "rollup --config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/southorangezh/cosis.git"
+  },
+  "homepage": "https://github.com/southorangezh/cosis",
+  "bugs": {
+    "url": "https://github.com/southorangezh/cosis/issues"
   },
   "author": "",
   "type": "commonjs",
